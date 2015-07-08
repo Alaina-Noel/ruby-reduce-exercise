@@ -11,7 +11,9 @@ describe Reducer do
   end
 
   it "can reduce an array of letters to a hash of letter frequency" do
+    skip
     letter_array = ["a", "b", "c", "c", "d", "d", "d"]
+    assert_equal ({"a"=>1, "b" => 1, "c" => 2, "d" => 3}), reducer.reduce
   end
 
   it "can reverse a sentence with reduce" do
@@ -21,6 +23,7 @@ describe Reducer do
   end
 
   it "can reverse the word order in a sentence" do
+    skip
     sentence = "I am a unicorn"
     reducer = Reducer.new(sentence)
     assert_equal "unicorn a am I", reducer.word_reverse
