@@ -6,7 +6,7 @@ require_relative '../lib/reducer.rb'
 describe Reducer do
   it "can reduce to a hash of how many times the number occurs in the array." do
     number_array = [1,1,2,2,2,2,3,3,4]
-    reducer= Reducer.new(number_array)
+    reducer = Reducer.new(number_array)
     assert_equal ({1 => 2, 2 => 4, 3 => 2, 4 => 1}), reducer.reduce
   end
 
@@ -17,6 +17,7 @@ describe Reducer do
   end
 
   it "can reverse a sentence with reduce" do
+    skip
     sentence = "I am a unicorn"
     reducer = Reducer.new(sentence)
     assert_equal "nrocinu a ma I", reducer.sent_reverse
