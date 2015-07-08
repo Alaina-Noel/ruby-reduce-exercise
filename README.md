@@ -4,20 +4,13 @@ The purpose of this tutorial is to expand your knowledge of the reduce enumerabl
 
 #### Instructions
 
-1. Create an empty directory
+1. clone repo
+2. change into the parent directory
+3. run the tests
+4. make the failing and skipped tests pass.
+
 ```bash
-1. mkdir reduce_practice
-```
-2. clone repo
-```bash
-git clone git@github.com:Jwan622/enum_challenges_lessons.git
-```
-3. change into the parent directory
-```bash
+git clone git@github.com:Jwan622/enum_challenges_lessons.git reduce_practice
 cd reduce_practice
-```
-4. run the tests
-```bash
 ruby test/reduce_test.rb
 ```
-5. make the failing and skipped tests pass.
